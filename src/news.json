@@ -1,0 +1,58 @@
+{
+  "status": "ok",
+  "totalResults": 10,
+  "articles": [
+    {
+      "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+      },
+      "author": "BBC News",
+      "title": "Covid: New heavily mutated variant B.1.1.529 in South Africa raises concern",
+      "description": "Scientists are closely watching a new variant circulating in South Africa - but there are few clear answers.",
+      "url": "http://www.bbc.co.uk/news/health-59418127",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/14DFC/production/_121800558_gettyimages-1212213050.jpg",
+      "publishedAt": "2021-11-25T19:37:21.2652847Z",
+      "content": "James GallagherHealth and science correspondent@JamesTGallagheron Twitter\r\nImage source, Getty Images\r\nWe're back in familiar territory - growing concern about a new variant of coronavirus. \r\nThe lat… [+4031 chars]"
+    },
+    {
+      "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+      },
+      "author": "BBC News",
+      "title": "Channel migrants: UK officials head to France for talks after tragedy",
+      "description": "Home Secretary Priti Patel says there is \"no quick fix\" to stop Channel crossings following the tragedy.",
+      "url": "http://www.bbc.co.uk/news/uk-59423245",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/753A/production/_121801003_pa-63938368.jpg",
+      "publishedAt": "2021-11-25T19:07:20.3704576Z",
+      "content": "By Doug FaulknerBBC News\r\nThe UK and France have held \"positive\" talks on tackling trafficking following the deaths of 27 people in the Channel, a government source has told the BBC.\r\nBritish officia… [+4440 chars]"
+    },
+    {
+      "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+      },
+      "author": "BBC News",
+      "title": "Macy's Thanksgiving Parade: Baby Yoda and Snoopy delight crowds",
+      "description": "Thousands turn out to enjoy the annual parade with millions more watching on television.",
+      "url": "http://www.bbc.co.uk/news/world-us-canada-59423297",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/024D/production/_121798500_mediaitem121798499.jpg",
+      "publishedAt": "2021-11-25T18:37:21.4605939Z",
+      "content": "A cast of colourful characters returned to the New York skies on Thursday, delighting thousands who packed the streets for the annual Macy's Thanksgiving Parade.\r\nBaby Yoda, Snoopy and Papa Smurf wer… [+1339 chars]"
+    },
+    {
+      "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+      },
+      "author": "BBC News",
+      "title": "Macy's Thanksgiving Parade: Baby Yoda and Snoopy delight crowds",
+      "description": "Thousands turn out to enjoy the annual parade with millions more watching on television.",
+      "url": "http://www.bbc.co.uk/news/world-us-canada-59423297",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/024D/production/_121798500_mediaitem121798499.jpg",
+      "publishedAt": "2021-11-25T18:37:21.4605939Z",
+      "content": "A cast of colourful characters returned to the New York skies on Thursday, delighting thousands who packed the streets for the annual Macy's Thanksgiving Parade.\r\nBaby Yoda, Snoopy and Papa Smurf wer… [+1339 chars]"
+    }
+  ]
+}
