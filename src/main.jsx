@@ -8,44 +8,16 @@ import TopHeadLines from "./components/TopHeadLines";
 import MainLayout from "./MainLayout";
 import Category from "./components/Category";
 import Search from "./components/Search";
-import SignInScreen from "./components/SignInScreen";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NewsAPI from "./NewsAPI";
-import firebase from "firebase/compat/app";
-import "firebase/compat/auth";
 
 class App extends React.Component {
   constructor(props) {
     super(props);
 
     this.newsapi = new NewsAPI("0b990834fb0b430ebf218f7ec1014b44");
-    this.firebaseConfig = {
-      apiKey: "AIzaSyCiFkPOlJRrte5CV75AFgHWfgLNt9QBjgc",
-      authDomain: "news-portal-123.firebaseapp.com",
-      projectId: "news-portal-123",
-      storageBucket: "news-portal-123.appspot.com",
-      messagingSenderId: "215947503843",
-      appId: "1:215947503843:web:6f6778b6a921f0f2717dd6",
-    };
 
-    // Initialize Firebase
-
-    this.app = firebase.initializeApp(this.firebaseConfig);
-    this.uiConfig = {
-      signInFlow: "popup",
-      signInOptions: [
-        firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-        firebase.auth.FacebookAuthProvider.PROVIDER_ID,
-        firebase.auth.EmailAuthProvider.PROVIDER_ID,
-      ],
-      callbacks: {
-        signInSuccess: () => {
-          this.signInSuccess();
-        },
-      },
-    };
     this.state = {
-      user: null,
       categories: [
         "Business",
         "Entertainment",
@@ -71,9 +43,6 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    firebase.auth().onAuthStateChanged((user) => {
-      this.signInSuccess();
-    });
     this.getLocation().then((data) => {
       let { latitude, longitude, country_code, city } = data.ip;
       this.setState({ latitude, longitude, country_code, city });
@@ -186,16 +155,6 @@ class App extends React.Component {
   }
 
   render() {
-    if (!this.state.user) {
-      return (
-        <SignInScreen
-          uiConfig={this.uiConfig}
-          firebaseAuth={firebase.auth()}
-          handleSignInStateChange={this.handleSignInStateChange}
-        />
-      );
-    }
-
     return (
       <BrowserRouter>
         <Routes>

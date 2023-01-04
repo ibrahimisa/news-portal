@@ -1,9 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import NavigationBar from "./components/navbar";
-import WeatherWidget from "./components/WeatherWidget";
 import { Container } from "react-bootstrap";
-import Footer from "./components/Footer";
 
 export default function MainLayout({
   categories,
@@ -22,7 +20,6 @@ export default function MainLayout({
       <Container className="p-16" fluid>
         <Outlet />
       </Container>
-      <Footer user={user} signOut={signOut} />
     </Container>
   );
 }
