@@ -30,7 +30,13 @@ export default class NewsAPI {
   }
 
   async getNews({ endpoint, category, country_code, pageSize, page = 1, query }) {
-    let url = `https://newsapi.org/v2/${endpoint}?${country_code ? "country=" + country_code + "&" : ""}${category ? `category=${category}&` : ""}pageSize=${pageSize}&page=${page}&${query ? `q=${query}` : ""}&apiKey=${this.apiKey}`;
+    let url = `https://maroon-snail-yoke.cyclic.app/${endpoint}?${
+      country_code ? 'country=' + country_code + '&' : ''
+    }${
+      category ? `category=${category}&` : ''
+    }pageSize=${pageSize}&page=${page}&${query ? `q=${query}` : ''}&apiKey=${
+      this.apiKey
+    }`;
    
     let response = await fetch(url);
 
